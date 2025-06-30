@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-center">
+            <h1 class="navbar-brand fst-italic text-light">Simon Game</h1>
+        </div>
+    </nav>
+    <p class="text-center pt-4 fs-4">Click start button to start the game!!</p>
+    <div class="container-fluid position-absolute top-50 start-50 translate-middle text-center g">
+        <div class="row row-cols-2 gx-3 gy-3">
+            <button class="col">
+                <div class="block red py-5" id="0">red</div>
+            </button>
+            <button class="col">
+                <div class="block green py-5" id="1">green</div>
+            </button>
+            <button class="col">
+                <div class="block blue py-5" id="2">blue</div>
+            </button>
+            <button class="col">
+                <div class="block yellow py-5" id="3">yellow</div>
+            </button>
+        </div>
+        <div class="row">
+            <button class="col">
+                <div class="my-5 px-5 btn btn-success start">Start</div>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous">
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
